@@ -1,0 +1,20 @@
+{
+  "name": "multibourn-store",
+  "version": "0.1.0",
+  "main": "backend/dist/server.js",
+  "author": "Md Mobinur Rahaman",
+  "private": true,
+  "description": "",
+  "workspaces": [
+    "backend"
+  ],
+  "scripts": {
+    "start": "npm run start:backend",
+    "start:backend": "npm --prefix backend run dev",
+    "build": "npm run build:backend",
+    "build:backend": "npm --prefix backend run build"
+  },
+  "devDependencies": {
+    "concurrently": "^6.0.0"
+  }
+}
